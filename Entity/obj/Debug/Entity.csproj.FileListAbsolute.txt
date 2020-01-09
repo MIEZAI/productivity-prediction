@@ -1,0 +1,15 @@
+C:\Users\asus\Desktop\产能预测软件相关文件\CapacityForecasting1.5\Entity\bin\Debug\Entity.dll
+C:\Users\asus\Desktop\产能预测软件相关文件\CapacityForecasting1.5\Entity\bin\Debug\Entity.pdb
+C:\Users\asus\Desktop\产能预测软件相关文件\CapacityForecasting1.5\Entity\obj\Debug\Entity.dll
+C:\Users\asus\Desktop\产能预测软件相关文件\CapacityForecasting1.5\Entity\obj\Debug\Entity.pdb
+C:\Users\asus\Desktop\产能预测软件相关文件\CapacityForecasting1.5\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+E:\C#\VS2015\CapacityForecasting1.7\Entity\bin\Debug\Entity.dll
+E:\C#\VS2015\CapacityForecasting1.7\Entity\bin\Debug\Entity.pdb
+E:\C#\VS2015\CapacityForecasting1.7\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+E:\C#\VS2015\CapacityForecasting1.7\Entity\obj\Debug\Entity.dll
+E:\C#\VS2015\CapacityForecasting1.7\Entity\obj\Debug\Entity.pdb
+C:\Users\asus\Desktop\CapacityForecasting1.9.1\Entity\bin\Debug\Entity.dll
+C:\Users\asus\Desktop\CapacityForecasting1.9.1\Entity\bin\Debug\Entity.pdb
+C:\Users\asus\Desktop\CapacityForecasting1.9.1\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\CapacityForecasting1.9.1\Entity\obj\Debug\Entity.dll
+C:\Users\asus\Desktop\CapacityForecasting1.9.1\Entity\obj\Debug\Entity.pdb

@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB526147-B100-40E7-A675-6CA313598F01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapacityForecasting</RootNamespace>
+    <AssemblyName>CapacityForecasting</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1" />
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.Printing.v16.1.Core" />
+    <Reference Include="DevExpress.Utils.v16.1" />
+    <Reference Include="DevExpress.XtraBars.v16.1" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.UI, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WHC.Framework.Commons, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WHC.Framework.Commons.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CNSJ_evaluation\ProductionForecast2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNSJ_evaluation\ProductionForecast2.Designer.cs">
+      <DependentUpon>ProductionForecast2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CNSJ_evaluation\ProductionWellTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNSJ_evaluation\ProductionWellTest.Designer.cs">
+      <DependentUpon>ProductionWellTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EUR_evaluation\Form_DAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EUR_evaluation\Form_DAC.Designer.cs">
+      <DependentUpon>Form_DAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EUR_evaluation\Form_FMBC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EUR_evaluation\Form_FMBC.Designer.cs">
+      <DependentUpon>Form_FMBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Form_Single.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Form_Single.designer.cs">
+      <DependentUpon>Form_Single.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geological_evaluation\LoggingDataEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geological_evaluation\LoggingDataEntry.Designer.cs">
+      <DependentUpon>LoggingDataEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CNSJ_evaluation\Form_PF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNSJ_evaluation\Form_PF.Designer.cs">
+      <DependentUpon>Form_PF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CNSJ_evaluation\Form_PFC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNSJ_evaluation\Form_PFC.Designer.cs">
+      <DependentUpon>Form_PFC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Form_Sub_v.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Form_Sub_v.Designer.cs">
+      <DependentUpon>Form_Sub_v.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stead_evaluation\GeologicalEngineering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stead_evaluation\GeologicalEngineering.designer.cs">
+      <DependentUpon>GeologicalEngineering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_PoissonRatio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_PoissonRatio.designer.cs">
+      <DependentUpon>Form_PoissonRatio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_CrustalStress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_CrustalStress.designer.cs">
+      <DependentUpon>Form_CrustalStress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_ShaleContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_ShaleContent.designer.cs">
+      <DependentUpon>Form_ShaleContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_Porosity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_Porosity.designer.cs">
+      <DependentUpon>Form_Porosity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_WaterSaturation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_WaterSaturation.designer.cs">
+      <DependentUpon>Form_WaterSaturation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_Permeability.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_Permeability.designer.cs">
+      <DependentUpon>Form_Permeability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_YoungsModulus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geological_evaluation\Form_YoungsModulus.designer.cs">
+      <DependentUpon>Form_YoungsModulus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\Form_AutomaticFit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\Form_AutomaticFit.Designer.cs">
+      <DependentUpon>Form_AutomaticFit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CNSJ_evaluation\Form_CNSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNSJ_evaluation\Form_CNSJ.designer.cs">
+      <DependentUpon>Form_CNSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\ProductionForecast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\ProductionForecast.designer.cs">
+      <DependentUpon>ProductionForecast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Form_NewWell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Form_NewWell.Designer.cs">
+      <DependentUpon>Form_NewWell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Form_Sub_h.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Form_Sub_h.Designer.cs">
+      <DependentUpon>Form_Sub_h.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Non_stead_EUR_evaluation\Form_Per.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\Form_Per.designer.cs">
+      <DependentUpon>Form_Per.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\Form_WP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\Form_WP.designer.cs">
+      <DependentUpon>Form_WP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\Form_ParameterFit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\Form_ParameterFit.Designer.cs">
+      <DependentUpon>Form_ParameterFit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\Form_CDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non_stead_EUR_evaluation\Form_CDI.designer.cs">
+      <DependentUpon>Form_CDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stead_evaluation\ProductionForecast1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stead_evaluation\ProductionForecast1.Designer.cs">
+      <DependentUpon>ProductionForecast1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CNSJ_evaluation\ProductionForecast2.resx">
+      <DependentUpon>ProductionForecast2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CNSJ_evaluation\ProductionWellTest.resx">
+      <DependentUpon>ProductionWellTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EUR_evaluation\Form_DAC.resx">
+      <DependentUpon>Form_DAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EUR_evaluation\Form_FMBC.resx">
+      <DependentUpon>Form_FMBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Form_Single.resx">
+      <DependentUpon>Form_Single.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geological_evaluation\LoggingDataEntry.resx">
+      <DependentUpon>LoggingDataEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CNSJ_evaluation\Form_PF.resx">
+      <DependentUpon>Form_PF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CNSJ_evaluation\Form_PFC.resx">
+      <DependentUpon>Form_PFC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geological_evaluation\Form_PoissonRatio.resx">
+      <DependentUpon>Form_PoissonRatio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geological_evaluation\Form_CrustalStress.resx">
+      <DependentUpon>Form_CrustalStress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geological_evaluation\Form_ShaleContent.resx">
+      <DependentUpon>Form_ShaleContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geological_evaluation\Form_Porosity.resx">
+      <DependentUpon>Form_Porosity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geological_evaluation\Form_WaterSaturation.resx">
+      <DependentUpon>Form_WaterSaturation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geological_evaluation\Form_Permeability.resx">
+      <DependentUpon>Form_Permeability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geological_evaluation\Form_YoungsModulus.resx">
+      <DependentUpon>Form_YoungsModulus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Form_Sub_v.resx">
+      <DependentUpon>Form_Sub_v.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stead_evaluation\GeologicalEngineering.resx">
+      <DependentUpon>GeologicalEngineering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non_stead_EUR_evaluation\Form_AutomaticFit.resx">
+      <DependentUpon>Form_AutomaticFit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CNSJ_evaluation\Form_CNSJ.resx">
+      <DependentUpon>Form_CNSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non_stead_EUR_evaluation\ProductionForecast.resx">
+      <DependentUpon>ProductionForecast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Form_NewWell.resx">
+      <DependentUpon>Form_NewWell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non_stead_EUR_evaluation\Form_ParameterFit.resx">
+      <DependentUpon>Form_ParameterFit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Form_Sub_h.resx">
+      <DependentUpon>Form_Sub_h.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Non_stead_EUR_evaluation\Form_Per.resx">
+      <DependentUpon>Form_Per.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non_stead_EUR_evaluation\Form_WP.resx">
+      <DependentUpon>Form_WP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non_stead_EUR_evaluation\Form_CDI.resx">
+      <DependentUpon>Form_CDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stead_evaluation\ProductionForecast1.resx">
+      <DependentUpon>ProductionForecast1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Access\Access.csproj">
+      <Project>{f6684d00-137c-418e-a979-33d8aa67617e}</Project>
+      <Name>Access</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonTools\CommonTools.csproj">
+      <Project>{f10f8338-851e-42dc-a135-e51538aa3b6b}</Project>
+      <Name>CommonTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataBusiness\DataBusiness.csproj">
+      <Project>{4759260e-abe5-4b68-8957-04ebf4a9283c}</Project>
+      <Name>DataBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{f13cc0eb-adff-4d88-9fa2-2493a7ca8fc2}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
